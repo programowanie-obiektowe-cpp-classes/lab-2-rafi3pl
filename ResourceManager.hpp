@@ -6,12 +6,12 @@ using namespace std;
 class ResourceManager
 {
     public:
-    ResourceManager() :adress(){new Resource}{}
+    ResourceManager() :adress()={new Resource;}{}
     ~ResourceManager() {
         delete adress; 
     }
     double get() {
-        return resource->get();
+        return adress->get();
     }
     private:
     Resource* adress;
