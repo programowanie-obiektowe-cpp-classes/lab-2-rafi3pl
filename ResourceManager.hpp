@@ -6,8 +6,8 @@ using namespace std;
 class ResourceManager
 {
     public:
-    ResourceManager() {
-        adress=new Resource;
+    ResourceManager():adress=new Resource; {
+        
     }
     ~ResourceManager() {
         delete adress; 
