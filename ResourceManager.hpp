@@ -15,7 +15,7 @@ class ResourceManager
         delete adress; 
     }
     double get() {
-        return Resource.get(adress);
+        return adress->get();
     }
 
     Resource* adress;
