@@ -18,7 +18,5 @@ class ResourceManager
         return adress->get();
     }
 
-    
-    private:
     Resource* adress;
 };
