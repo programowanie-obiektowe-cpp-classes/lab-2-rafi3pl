@@ -8,7 +8,10 @@ class ResourceManager
     public:
     ResourceManager() :adress{new Resource} {}
 
-    ResourceManager(const ResourceManager& kop) = default;
+    ResourceManager(const ResourceManager& kop) {
+        adress = new Resource;
+        *ardess=*(kop.adress)
+    }
 
 
     ~ResourceManager() {
