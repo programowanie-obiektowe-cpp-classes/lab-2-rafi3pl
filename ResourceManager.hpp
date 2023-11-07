@@ -10,7 +10,7 @@ class ResourceManager
 
     ResourceManager(const ResourceManager& kop) {
         adress = new Resource;
-        *ardess=*(kop.adress);
+        *adress=*(kop.adress);
     }
 
 
