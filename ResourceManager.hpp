@@ -13,7 +13,8 @@ class ResourceManager
         *adress=*(kop.adress);
     }
 
-    ResourceManager  operator=(const Resource& kop) {return *this;}
+    ResourceManager  operator=(const Resource& kop) {radress = new Resource;
+        *adress=*(kop.adress);}
 
     ~ResourceManager() {
         delete adress; 
