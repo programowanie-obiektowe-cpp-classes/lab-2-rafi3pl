@@ -9,12 +9,14 @@ class ResourceManager
     ResourceManager() :adress{new Resource} {}
 
     ResourceManager(const ResourceManager& kop) {
-        adress = new Resource;
+        adress = new Resource();
         *adress=*(kop.adress);
     }
 
-    ResourceManager  operator=(const ResourceManager& kop) {adress = new Resource;
-        *adress=*(kop.adress);}
+    ResourceManager  operator=(const ResourceManager& kop) {
+        *adress=*(kop.adress);
+        return *this;
+    }
 
     ~ResourceManager() {
         delete adress; 
